@@ -13,7 +13,7 @@ const app = express();
 // Connect Database
 connectDB();
 
-// cors
+// corscd 
 app.use(cors({ origin: true, credentials: true }));
 
 // Init Middleware

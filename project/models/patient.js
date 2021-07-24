@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const PatientSchema = new mongoose.Schema({
   PatientID:{
-    type:Number,
+    type: String,
     required: true,
     unique: true
     
@@ -33,8 +33,8 @@ const PatientSchema = new mongoose.Schema({
     type:String
   },
   Age:{
-    type:Number,
+    type: Number,
   }
 });
-module.exports = Patient = mongoose.model('patient', PatientSchema);
+module.exports = Patient = mongoose.model('Patient', PatientSchema);
 
